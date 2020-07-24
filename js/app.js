@@ -15,8 +15,8 @@ function welcomeUser() {
 
   //checks response to see which quiz to call
   if (takingQuizLowercase == 'yes') {
-    return document.write('<h2>' + userName + ' has selected to TAKE the quiz!</h2>');
     boxingQuiz();
+    return document.write('<h2>' + userName + ' has selected to TAKE the quiz!</h2>');
   } else if (takingQuizLowercase == 'no') {
     alert('Oh....well they can\'t really grade me unless you say yeah, so...');
     welcomeUser();
