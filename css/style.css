@@ -1,0 +1,9 @@
+h1{
+  color: blue;
+}
+
+ul{
+  margin: 15px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
