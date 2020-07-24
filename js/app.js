@@ -9,19 +9,19 @@ function welcomeUser() {
 
   //challenges user to one of 3 quizzes
   var takingQuiz = prompt('So, ' + userName + ', would you be willing to display some of your Professional Boxing knowledge? Yes or No?')
-  console.log(username + ' has selected the ' + quizType + ' quiz.');
+  console.log(userName + ' has selected the ' + quizType + ' quiz.');
 
   //converts response string to all lowercase to make responses uniform for the if/else statements
   var takingQuizLowercase = takingQuiz.toLowerCase();
 
   //checks response to see which quiz to call
   if (takingQuizLowercase == 'yes') {
-    return document.write('<h2>' + username + ' has selected to TAKE the quiz!</h2>');
+    return document.write('<h2>' + userName + ' has selected to TAKE the quiz!</h2>');
     boxingQuiz();
   } else if (takingQuizLowercase == 'no') {
     alert('Oh....well they can\'t really grade me unless you say yeah, so...');
     welcomeUser();
-    return document.write('<h3>' + username + ' has selected to NOT TAKE the quiz! Boooooooo!!!</h3>');
+    return document.write('<h3>' + userName + ' has selected to NOT TAKE the quiz! Boooooooo!!!</h3>');
   }
   else {
     alert('What? It\s a YES or NO question!');
@@ -85,7 +85,7 @@ function boxingQuiz() {
     alert('Question 5: There are 17 weight divisions in men\'s boxing. You answered: ' + bqQuestion5 + '. Wrong! Since so many body types exist, there needs to be a suitable range of competing weights so each type of fighter may prosper and grow as necessary!');
   }
 
-  return document.write('<h3>Thanks for playing, ' + username + '! Have a great day!</h3>');
+  return document.write('<h3>Thanks for playing, ' + userName + '! Have a great day!</h3>');
 }
 
 welcomeUser();
