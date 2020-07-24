@@ -9,7 +9,6 @@ function welcomeUser() {
 
   //challenges user to one of 3 quizzes
   var takingQuiz = prompt('So, ' + userName + ', would you be willing to display some of your Professional Boxing knowledge? Yes or No?')
-  console.log(userName + ' has selected the ' + quizType + ' quiz.');
 
   //converts response string to all lowercase to make responses uniform for the if/else statements
   var takingQuizLowercase = takingQuiz.toLowerCase();
