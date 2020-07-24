@@ -1,8 +1,9 @@
 'use strict'
+var userName;
 
 function welcomeUser() {
   //welcomes user and stores their name
-  var userName = prompt('Hi! Welcome to the site! What\'s your name?')
+  userName = prompt('Hi! Welcome to the site! What\'s your name?')
   console.log('User\'s name is ' + userName + '.');
 
   alert('Nice to meet you, ' + userName + '! Now let\'s get down to business. I\'m really excited you\'re here, because I wanted to test your knowledge of one of my favorite subjects, if you wanted.');
