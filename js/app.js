@@ -87,6 +87,7 @@ function lastBoxingQuestion() {
   } else if(boxingGuessChances == 0){
     alert('Nope! Yer outta chances!');
     alert('Tyson Fury is looking to take the remaining WBO, WBA, IBF titles from Anthony Joshua in the heavyweight division!');
+    guessMyNumber();
     return
   }
   //converting answer to lowercase for uniformity
