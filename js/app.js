@@ -34,7 +34,7 @@ function welcomeUser() {
   //checks response to see which quiz to call
   if (takingQuizLowercase == 'yes') {
     boxingQuiz();
-    return document.write('<h2>' + userName + ' has selected to TAKE the quiz!</h2>');
+    return 
   } else if (takingQuizLowercase == 'no') {
     alert('Oh....well they can\'t really grade me unless you say yeah, so...');
     welcomeUser();
@@ -52,15 +52,15 @@ function boxingQuiz() {
 
   // 5 questions for the assignment
   bqQuestion1 = prompt('My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"?');
-  //console.log(userName + 'answered Question 1 ' + bqQuestion1);
+  console.log(userName + 'answered Question 1 ' + bqQuestion1);
   bqQuestion2 = prompt('Does Wladimir Klitschko hold the record for the longest cumulative heavweight title reign of all time?');
-  //console.log(userName + 'answered Question 2 ' + bqQuestion2);
+  console.log(userName + 'answered Question 2 ' + bqQuestion2);
   bqQuestion3 = prompt('Was Muhammed Ali\'s birthname Cassius Clay?');
-  //console.log(userName + 'answered Question 3 ' + bqQuestion3);
+  console.log(userName + 'answered Question 3 ' + bqQuestion3);
   bqQuestion4 = prompt('Does a professional welterweight use 8 ounce gloves when competing?');
-  //console.log(userName + 'answered Question 4 ' + bqQuestion4);
+  console.log(userName + 'answered Question 4 ' + bqQuestion4);
   bqQuestion5 = prompt('There are 17 weight divisions in men\'s boxing.');
-  //console.log(userName + 'answered Question 5 ' + bqQuestion5);
+  console.log(userName + 'answered Question 5 ' + bqQuestion5);
 
   //converting answers to lowercase for uniformity
   bqQuestion1Lower = bqQuestion1.toLowerCase();
@@ -74,15 +74,15 @@ function boxingQuiz() {
 function lastBoxingQuestion() {
   if (boxingGuessChances == 6) {
     var bqQuestion6 = prompt('Name one of the two current world heavyweight professional boxing champions from any organization. I\'ll give you 6 chances on this one');
-    //console.log(userName + 'answered Question 6 ' + bqQuestion6);
+    console.log(userName + 'answered Question 6 ' + bqQuestion6);
     boxingGuessChances--;
   } else if (boxingGuessChances > 1 && boxingGuessChances < 6) {
     var bqQuestion6 = prompt('Name one of the two current world heavyweight professional boxing champions from any organization. I\'ll give you ' + boxingGuessChances + ' more chances to get it.');
-    //console.log(userName + 'answered Question 6 ' + bqQuestion6);
+    console.log(userName + 'answered Question 6 ' + bqQuestion6);
     boxingGuessChances--;
   } else if (boxingGuessChances == 1) {
     var bqQuestion6 = prompt('Name one of the two current world heavyweight professional boxing champions from any organization. I\'ll give you ONE more chance.');
-    //console.log(userName + 'answered Question 6 ' + bqQuestion6);
+    console.log(userName + 'answered Question 6 ' + bqQuestion6);
     boxingGuessChances--;
   } else if(boxingGuessChances == 0){
     alert('Nope! Yer outta chances!');
@@ -110,12 +110,15 @@ function lastBoxingQuestion() {
 function guessMyNumber() {
   if (guessChances == 4) {
     var numberGuessed = prompt('Ok last thing, ' + userName + '! I\'m thinking of a number between 1 and 20. Guess what number I\'m thinking of! I\'ll give ya ' + guessChances + ' more chances!');
+    console.log(userName + 'guessed ' + numberGuessed);
     guessChances--;
   } else if (guessChances > 1 && guessChances < 4) {
     var numberGuessed = prompt('Nope! Try again, ' + userName + '! I\'m thinking of a number between 1 and 20. Guess what number I\'m thinking of! I\'ll give ya ' + guessChances + ' more chances!');
+    console.log(userName + 'guessed ' + numberGuessed);
     guessChances--;
   } else if (guessChances == 1) {
     var numberGuessed = prompt('Nope! Try again, ' + userName + '! I\'m thinking of a number between 1 and 20. Guess what number I\'m thinking of! I\'ll give ya ONE more chance!');
+    console.log(userName + 'guessed ' + numberGuessed);
     guessChances--;
   }
   else if (guessChances == 0) {
