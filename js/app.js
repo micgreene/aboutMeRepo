@@ -156,10 +156,10 @@ function guessMyNumber() {
 function reviewAnswers() {
   //checks to see what user answered for the first 5 boxing questions
   if (bqQuestion1Lower == 'yes') {
-    alert('Question 1: My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"? You answered: ' + bqQuestion1 + '. Are you serious? This was a gimme!!!');
-    correctAnswers++;
+    alert('Question 1: My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"? You answered: ' + bqQuestion1 + '. Are you serious? This was a gimme!!!');    
   } else {
     alert('Question 1: My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"? You answered: ' + bqQuestion1 + '. Correct! Tommy Hearns was known as the HITMAN. Notable fights include brawls versus Roberto Duran and "Marvelous" Marvin Hagler.');
+    correctAnswers++;
   }
 
   if (bqQuestion2Lower == 'yes') {
