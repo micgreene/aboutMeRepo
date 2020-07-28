@@ -12,7 +12,7 @@ var bqQuestion3Lower;
 var bqQuestion4Lower;
 var bqQuestion5Lower;
 var bqQuestion6Lower;
-var answerArray = ['fury', 'joshua'];
+var answerArray = ['fury', 'joshua', 'tyson fury', 'anthony joshua'];
 
 var guessChances = 4;
 var boxingGuessChances = 6;
