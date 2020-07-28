@@ -1,5 +1,11 @@
 'use strict'
 var userName;
+var bqQuestion1;
+var bqQuestion2;
+var bqQuestion3;
+var bqQuestion4;
+var bqQuestion5;
+var bqQuestion6;
 var bqQuestion1Lower;
 var bqQuestion2Lower;
 var bqQuestion3Lower;
