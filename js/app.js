@@ -51,15 +51,15 @@ function boxingQuiz() {
   alert('Awesome. I knew you were my dude, ' + userName + '! Here are 5 yes or no questions to prove your knowledge. Type only "Yes" or "No" as your responses, please. Let\'s get started!');
 
   // 5 questions for the assignment
-  var bqQuestion1 = prompt('My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"?');
+  bqQuestion1 = prompt('My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"?');
   //console.log(userName + 'answered Question 1 ' + bqQuestion1);
-  var bqQuestion2 = prompt('Does Wladimir Klitschko hold the record for the longest cumulative heavweight title reign of all time?');
+  bqQuestion2 = prompt('Does Wladimir Klitschko hold the record for the longest cumulative heavweight title reign of all time?');
   //console.log(userName + 'answered Question 2 ' + bqQuestion2);
-  var bqQuestion3 = prompt('Was Muhammed Ali\'s birthname Cassius Clay?');
+  bqQuestion3 = prompt('Was Muhammed Ali\'s birthname Cassius Clay?');
   //console.log(userName + 'answered Question 3 ' + bqQuestion3);
-  var bqQuestion4 = prompt('Does a professional welterweight use 8 ounce gloves when competing?');
+  bqQuestion4 = prompt('Does a professional welterweight use 8 ounce gloves when competing?');
   //console.log(userName + 'answered Question 4 ' + bqQuestion4);
-  var bqQuestion5 = prompt('There are 17 weight divisions in men\'s boxing.');
+  bqQuestion5 = prompt('There are 17 weight divisions in men\'s boxing.');
   //console.log(userName + 'answered Question 5 ' + bqQuestion5);
 
   //converting answers to lowercase for uniformity
@@ -92,7 +92,7 @@ function lastBoxingQuestion() {
   //converting answer to lowercase for uniformity
   bqQuestion6Lower = bqQuestion6.toLowerCase();
 
-  for (i = 0; i < answerArray.length; i++) {
+  for (var i = 0; i < answerArray.length; i++) {
     if (bqQuestion6Lower == answerArray[i]) {
       alert('Question 6: Name one of the two current world heavyweight professional boxing champions from any organization. You answered: ' + bqQuestion6 + '. Correct! Tyson Fury is looking to take the remaining WBO, WBA, IBF titles from Anthony Joshua in the heavyweight division!');
       correctAnswers++;
