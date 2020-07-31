@@ -1,4 +1,7 @@
 # aboutMeRepo
 Repo used for all the "About Me Guessing Game" Labs for Codefellows 201n19
 
-1["About me" Website](https://micgreene.github.io/aboutMeRepo/index)
+["About me" Website](https://micgreene.github.io/aboutMeRepo/index)
+
+Driver: Kat Gonzalez
+Navigator: Michael Greene

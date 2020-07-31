@@ -199,4 +199,21 @@ function finalReview(){
   return document.write('<h3> Thanks for playing, ' + userName + '! Final score: ' + correctAnswers + '</h3>');
 }
 
+function lab4() {
+  var labQuestion = prompt('Did you enjoy the site? Yes or No?').toLowerCase()
+  if (labQuestion === yes) {
+    alert('Thanks for Visiting')
+  } else if (labQuestion === no) {
+    alert('Too Bad ' + userName )
+  } else {
+    alert('Yes or No please.')
+    lab4();
+    return
+  
+  }
+
+
+}
+
 welcomeUser();
+lab4();
