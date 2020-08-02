@@ -90,12 +90,12 @@ function lastBoxingQuestion() {
       correctAnswers++;
       guessMyNumber();
       return
-    }
-    
-    alert('Question 6: Name one of the two current world heavyweight professional boxing champions from any organization. You answered: ' + bqQuestion6 + '. Wrong! Try again!');
+    }    
+  }
+
+  alert('Question 6: Name one of the two current world heavyweight professional boxing champions from any organization. You answered: ' + bqQuestion6 + '. Wrong! Try again!');
       lastBoxingQuestion();
       return
-  }
 }
 
 function guessMyNumber() {
