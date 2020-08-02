@@ -143,35 +143,35 @@ function guessMyNumber() {
 
 function reviewAnswers() {
   //checks to see what user answered for the first 5 boxing questions
-  if (bqQuestion1Lower == 'yes') {
+  if (bqQuestion1Lower == 'yes' || bqQuestion1Lower == 'y') {
     alert('Question 1: My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"? You answered: ' + bqQuestion1 + '. Are you serious? This was a gimme!!!');    
   } else {
     alert('Question 1: My all time favorite fighter; was Tommy Hearns\' nickname was "The Iceman"? You answered: ' + bqQuestion1 + '. Correct! Tommy Hearns was known as the HITMAN. Notable fights include brawls versus Roberto Duran and "Marvelous" Marvin Hagler.');
     correctAnswers++;
   }
 
-  if (bqQuestion2Lower == 'yes') {
+  if (bqQuestion2Lower == 'yes' || bqQuestion2Lower == 'y') {
     alert('Question 2: Does Wladimir Klitschko hold the record for the longest cumulative heavweight title reign of all time? You answered: ' + bqQuestion2 + '. Correct! Klitschko reigned for an astounding 4,382 cumulative days as heavyweight champion, barely edging out Joe Louis by about 2 months.');
     correctAnswers++;
   } else {
     alert('Question 2: Does Wladimir Klitschko hold the record for the longest cumulative heavweight title reign of all time? You answered: ' + bqQuestion2 + '. Well, I guess I can\'t blame you for being a boxing fan who knows nothing about the arugably strongest heavyweight champ of the modern era...can I?');
   }
 
-  if (bqQuestion3Lower == 'yes') {
+  if (bqQuestion3Lower == 'yes' || bqQuestion3Lower == 'y') {
     alert('Question 3: Was Muhammed Ali\'s birthname Cassius Clay? You answered: ' + bqQuestion3 + '. Correct! Ali changed his name to show support for the Muslim Brotherhood movement and as an act to show independence of identity as a black man during a turbulent time in our country\'s history.');
     correctAnswers++;
   } else {
     alert('Question 3: Was Muhammed Ali\'s birthname Cassius Clay? You answered: ' + bqQuestion3 + '. Oof, how did you not know that?!');
   }
 
-  if (bqQuestion4Lower == 'yes') {
+  if (bqQuestion4Lower == 'yes' || bqQuestion4Lower == 'y') {
     alert('Question 4: Does a professional welterweight use 8 ounce gloves when competing? You answered: ' + bqQuestion4 + '. Correct! Welterweights and below use 8 oz gloves while super welterweights and above fight with 10 ounce gloves.');
     correctAnswers++;
   } else {
     alert('Question 4: Does a professional welterweight use 8 ounce gloves when competing? You answered: ' + bqQuestion4 + '. Ok, that was tricky! Welterweights and below use 8 oz gloves while super welterweights and above fight with 10 ounce gloves.');
   }
 
-  if (bqQuestion5Lower == 'yes') {
+  if (bqQuestion5Lower == 'yes' || bqQuestion5Lower == 'y') {
     alert('Question 5: There are 17 weight divisions in men\'s boxing. You answered: ' + bqQuestion5 + '. Correct! From Minimumweight to Heavyweight, there\'s a place for everyone at the table!');
     correctAnswers++;
   } else {
